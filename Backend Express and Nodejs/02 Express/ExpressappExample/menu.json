@@ -1,0 +1,36 @@
+{
+  "menu": [
+    {
+      "id": 1,
+      "name": "Margherita Pizza",
+      "category": "Pizza",
+      "price": 299,
+      "ingredients": ["Tomato", "Cheese", "Basil"],
+      "isVeg": true
+    },
+    {
+      "id": 2,
+      "name": "Chicken Burger",
+      "category": "Burger",
+      "price": 199,
+      "ingredients": ["Chicken Patty", "Lettuce", "Mayo", "Bun"],
+      "isVeg": false
+    },
+    {
+      "id": 3,
+      "name": "Penne Alfredo Pasta",
+      "category": "Pasta",
+      "price": 349,
+      "ingredients": ["Penne", "Alfredo Sauce", "Garlic", "Parsley"],
+      "isVeg": true
+    },
+    {
+      "id": 4,
+      "name": "Coke",
+      "category": "Beverage",
+      "price": 49,
+      "ingredients": ["Carbonated Water", "Sugar", "Caffeine"],
+      "isVeg": true
+    }
+  ]
+}

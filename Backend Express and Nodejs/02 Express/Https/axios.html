@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Axios Example</title>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+
+  <div id="output"></div>
+
+  <script>
+    axios.get('https://jsonplaceholder.typicode.com/posts/1')
+      .then(res => {
+        document.getElementById('output').innerHTML =
+          `<h3>${res.data.title}</h3><p>${res.data.body}</p>`;
+      })
+      .catch(err => {
+        console.error(err);
+      });
+  </script>
+
+</body>
+</html>
