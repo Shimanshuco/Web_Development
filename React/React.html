@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Understanding React</title>
+</head>
+<body>
+    <div id="buttonParent">
+
+    </div>
+    <script>
+        let state={
+            count : 0
+        }
+
+        function onButtonPress(){
+            state.count++;
+            buttonComponentReRender();
+        }
+
+        function buttonComponentReRender(){ //React automatically does it!
+            document.getElementById("buttonParent").innerHTML="";
+            const component  = buttonComponent(state.count);
+            document.getElementById("buttonParent").appendChild(component);
+        } //buttonComponentReRender()  ==> <button onclick="onButtonPress">Counter 0 </button>
+
+        function buttonComponent(count){
+            const button = document.createElement("button");
+            button.innerHTML =  `Counter ${count}`
+            button.setAttribute("onClick", `onButtonPress()`);
+            return button;
+        }
+
+        buttonComponentReRender()
+
+    </script>
+</body>
+
+</html>
