@@ -1,0 +1,50 @@
+<!-- Most used -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        .container{
+            border: 2px solid Blue;
+            display: flex;
+            height: 80vh;
+            align-items: center;  
+            /* justify-content: center; */
+            /* 1 */
+            /* justify-content: flex-end; */
+            /* 2 */
+            /* justify-content: flex-start; */
+            /* 3 */
+            /* justify-content: right; */
+            /* 4 */
+            /* justify-content: space-around; */
+            /* 5 */
+            /* justify-content: space-between; */
+            /* 6 */
+            justify-content: space-evenly;
+            
+
+        }
+        .item{
+            height: 100px;
+            width:100px;
+            border:2px solid black;
+            margin: 4px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+    </main>
+</body>
+</html>
