@@ -21,7 +21,9 @@ export default function (){
     }
     return (
         <>
-        {/* Make it a card */}
+        {/* Wrong Way to hit the backend */}
+        {/* Go in the network tab and see the first request and it is Loading ... */}
+        
         <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center border border-gray-50 rounded-lg p-8 pb-20 gap-16 sm:p-20">
             <h1 className="text-2xl font-bold">Todo's of the User : </h1>
             <p className="text-lg"> UserId : {data.userId} </p>
