@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Range</title>
+</head>
+<body>
+    <h1>Range Input</h1>
+    <form action="/action">
+        
+        <label for="range">Volume (Between 1 and 100):</label>
+        <input type="range" id="range" name="range" min="1" max="100" oninput="out1.value = this.value">
+        <output id="out1"></output>
+        <br>
+
+        <label for="range2">Volume (Between 1 and 100):</label>
+        <input type="range" id="range2" name="range2" min="1" max="100" value="50" oninput="out2.value = this.value">
+        <output id="out2">50</output>
+        <br>
+
+        <label for="range3">Volume (Between 1 and 100):</label>
+        <input type="range" id="range3" name="range3" min="0" max="100" value="50" step="10" oninput="out3.value = this.value">
+        <output id="out3">50</output>
+        <br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

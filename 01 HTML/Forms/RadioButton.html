@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio Button</title>
+</head>
+
+<body>
+    <h1>Select Gender</h1>
+    <h3>Without Value attribute : http://127.0.0.1:5500/action?gender=on </h3>
+    <form action="/action">
+        <input type="radio" name="gender" id="male">
+        <label for="male">Male</label><br>
+        <input type="radio" name="gender" id="female">
+        <label for="female">Female</label><br>
+        <button type="submit">Submit</button>
+    </form>
+    <h3>With Value attribute : http://127.0.0.1:5500/action?gender=male </h3>
+    <form action="/action">
+        <input type="radio" name="gender" id="male" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" name="gender" id="female" value="female">
+        <label for="female">Female</label><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>
